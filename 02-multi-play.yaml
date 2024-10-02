@@ -1,4 +1,4 @@
-- name: play-01
+- name: multi play tasks
   hosts: web
   tasks:
   - name: play-01 task-01
