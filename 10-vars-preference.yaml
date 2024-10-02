@@ -1,0 +1,21 @@
+- name: varaiable at play level
+  hosts: web
+  vars:   # play level, all tasks in this file/play have access to this
+    COURSE: "DevOps with AWS from play level"
+    DURATION: "120 HOURS"
+    TRAINER: "SivaKumar"
+# Variables from prompt
+- name: variables from prompt
+  hosts: web
+  vars_prompt:    # prompts the value
+  - name: COURSE
+    prompt: please enter the course name
+    private: false    # not confidential
+# task level variables override play level
+  - name: print the information again
+    vars: 
+    COURSE: "DevOps with AWS from task level"
+    DURATION: "120 HOURS"
+    TRAINER: "SivaKumar"
+  ansible.builtin.debug:
+    msg: "Hi, I am Learning: {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
