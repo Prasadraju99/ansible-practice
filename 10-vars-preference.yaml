@@ -5,8 +5,8 @@
     DURATION: "120 HOURS"
     TRAINER: "SivaKumar"
 # Variables from files
-  # vars_files:
-  # - vars.yaml
+  vars_files:
+  - vars.yaml
 # Variables from prompt
   vars_prompt:    # prompts the value
   - name: COURSE
