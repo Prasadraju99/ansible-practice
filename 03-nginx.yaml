@@ -3,5 +3,5 @@
   tasks:
   - name: install nginx
     ansible.builtin.package   # to install a package/service
-    name: nginx
-    state: present
+      name: nginx
+      state: present
