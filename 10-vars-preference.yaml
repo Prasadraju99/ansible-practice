@@ -8,6 +8,7 @@
   vars_files:
   - vars.yaml
 # Variables from prompt
+- name: Varaiables from prompt
   vars_prompt:    # prompts the value
   - name: COURSE
     prompt: please enter the course name
