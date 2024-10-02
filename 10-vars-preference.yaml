@@ -5,18 +5,18 @@
     DURATION: "120 HOURS"
     TRAINER: "SivaKumar"
 # Variables from files
-vars_files:
-- vars.yaml
+  # vars_files:
+  # - vars.yaml
 # Variables from prompt
-vars_prompt:    # prompts the value
-- name: COURSE
-  prompt: please enter the course name
-  private: false    # not confidential
+  vars_prompt:    # prompts the value
+  - name: COURSE
+    prompt: please enter the course name
+    private: false    # not confidential
 # task level variables override play level
-- name: print the information again
-  vars: 
-    COURSE: "DevOps with AWS from task level"
-    DURATION: "120 HOURS"
-    TRAINER: "SivaKumar"
-  ansible.builtin.debug:
-    msg: "Hi, I am Learning: {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
+  - name: print the information again
+    vars: 
+      # COURSE: "DevOps with AWS from task level"
+      DURATION: "120 HOURS"
+      TRAINER: "SivaKumar"
+    ansible.builtin.debug:
+      msg: "Hi, I am Learning: {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
