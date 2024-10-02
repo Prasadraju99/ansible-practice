@@ -3,10 +3,10 @@
   become: yes
   tasks:
   - name: install nginx
-    ansible.builtin.package:  # to install a package/service
+    ansible.builtin.dnf:  # to install a package/service # Heterogeneous module that can work for all distributions
       name: nginx
       state: absent
-  # - name: start nginx service
-  #   ansible.builtin.service:  # to start a package/service
-  #     name: nginx
-  #     state: started
+  - name: start nginx service
+    ansible.builtin.service:  # to start a package/service
+      name: nginx
+      state: started
