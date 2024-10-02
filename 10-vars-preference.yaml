@@ -21,3 +21,10 @@
       TRAINER: "SivaKumar"
     ansible.builtin.debug:
       msg: "Hi, I am Learning: {{COURSE}}"
+
+#1. Command line/Args
+#2. 
+#3. 
+#4. 
+#5. 
+#6.  
