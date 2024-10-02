@@ -1,9 +1,9 @@
 - name: varaiable at play level
   hosts: web
-  vars:   # play level, all tasks in this file/play have access to this
-    COURSE: "DevOps with AWS from play level"
-    DURATION: "120 HOURS"
-    TRAINER: "SivaKumar"
+  # vars:   # play level, all tasks in this file/play have access to this
+  #   COURSE: "DevOps with AWS from play level"
+  #   DURATION: "120 HOURS"
+  #   TRAINER: "SivaKumar"
 # Variables from files
   # vars_files:
   # - vars.yaml
