@@ -8,10 +8,10 @@
   # vars_files:
   # - vars.yaml
 # Variables from prompt
-  vars_prompt:    # prompts the value
-  - name: COURSE
-    prompt: please enter the course name
-    private: false    # not confidential
+  # vars_prompt:    # prompts the value
+  # - name: COURSE
+  #   prompt: please enter the course name
+  #   private: false    # not confidential
 # task level variables override play level
   tasks:
   - name: print the information
@@ -25,6 +25,6 @@
 #1. Command line/Args
 #2. Task level
 #3. var fiels
-#4. 
+#4. Prompt
 #5. 
 #6.  
