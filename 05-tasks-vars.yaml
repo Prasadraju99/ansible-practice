@@ -10,7 +10,7 @@
       msg: "Hi, I am Learning: {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
 
 # task level
-  - name: print the information again and again
+  - name: print the information again
     vars:   # task level variables override play level
       COURSE: "Ansible"
       ansible.builtin.debug:
@@ -18,5 +18,5 @@
 
   - name: print the information again and again
     ansible.builtin.debug:
-      msg: "Hi, I am Learning: {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
+        msg: "Hi, I am Learning: {{COURSE}}, Duration is: {{DURATION}}, Trainer: {{TRAINER}}"
 
