@@ -13,14 +13,14 @@
   #   prompt: please enter the course name
   #   private: false    # not confidential
 # task level variables override play level
-  # tasks:
-  # - name: print the information
-  #   vars: 
-  #     # COURSE: "DevOps with AWS from task level"
-  #     DURATION: "120 HOURS"
-  #     TRAINER: "SivaKumar"
-  #   ansible.builtin.debug:
-  #     msg: "Hi, I am Learning: {{COURSE}}"
+  tasks:
+  - name: print the information
+    vars: 
+      # COURSE: "DevOps with AWS from task level"
+      DURATION: "120 HOURS"
+      TRAINER: "SivaKumar"
+    ansible.builtin.debug:
+      msg: "Hi, I am Learning: {{COURSE}}"
 
 #1. Command line/Args
 #2. Task level
