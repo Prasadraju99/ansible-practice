@@ -1,12 +1,15 @@
 - name: variables from prompt
   hosts: web
-  vars_prompt:
+  vars_prompt:    # prompts the value
   - name: COURSE
     prompt: please enter the course name
+    present: false    # not confidential
   - name: DURATION
     prompt: please enter the duration
+    present: true     # Cconfidential
   - name: TRAINER
     prompt: please enter the trainer name
+    present: false
   tasks:
   - name: print the course information
     ansible.builtin.debug:
