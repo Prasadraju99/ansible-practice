@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    my_number: 139    # int/nubmer
+    my_number: 9    # int/nubmer
   tasks:
   - name: print this if less than 10
     ansible.builtin.debug:
