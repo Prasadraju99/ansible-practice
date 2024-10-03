@@ -2,7 +2,7 @@
   hosts: local
   connection: local  # for local users
   vars:
-  - course: devops with aws # string
+    course: devops with aws # string
     duration: 120 # integer/number
     topics:       #lists
     - Linux
