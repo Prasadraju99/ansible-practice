@@ -11,14 +11,14 @@
     - Terraform
     - AWS
     - K8s
-  live: true  # Boolean
-  tools:      # map/dictionary
-    ci: jenkins     # key value pairs
-    cm: ansible
-    cloud: aws
-    aws:
-    - IAM
-    - S3
+    live: true  # Boolean
+    tools:      # map/dictionary
+      ci: jenkins     # key value pairs
+      cm: ansible
+      cloud: aws
+      aws:
+      - IAM
+      - S3
   tasks:
   - name: print the course information
     ansible.builtin.debug:
