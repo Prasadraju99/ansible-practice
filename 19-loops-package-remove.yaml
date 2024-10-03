@@ -5,7 +5,7 @@
   - name: install the remove packages in node server
     ansible.builtin.package:
       name: "{{item.name}}"
-      state: "{{present.name}}"
+      state: "{{item.state}}"
     loop:
     - {name: "mysql", state: "absent"}
     - {name: "nginx", state: "present"}
