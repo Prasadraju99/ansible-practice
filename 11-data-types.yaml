@@ -1,6 +1,6 @@
 - name" devops course information
   hosts: local
-  connections: local  # for local users
+  connection: local  # for local users
   vars:
   - course: devops with aws # string
     duration: 120 # integer/number
