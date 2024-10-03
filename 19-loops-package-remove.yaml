@@ -1,0 +1,13 @@
+- name: install and remove packages
+  hosts: web
+  become: yes
+  tasks:
+  - name: install the remove packages in node server
+    ansible.builtin.package:
+      name: "{{item.name}}"
+      state: "{{present.name}}"
+    loop:
+    - {name: "mysql", state: "absent"}
+    - {name: "nginx", state: "present"}
+    - {name: "postfix", state: "absent"}
+    - {name: "httpd", state: "present"}
