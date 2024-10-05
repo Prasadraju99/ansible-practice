@@ -25,3 +25,7 @@
       instance_type: "t3.micro"
     loop: "{{ instances }}"
     register: ec2_instances    # to capture the output of a task
+  
+  - name: print the output
+    ansible.builtin.debug:
+      msg: "{{ ec2_instances }}"
