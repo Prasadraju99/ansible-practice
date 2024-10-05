@@ -36,8 +36,8 @@
         name: "Devops with AWS"
         duration: "120 Hours"
         trainer: "Sivakumar"
-      anisble.builtin.debug:
-        msg: "{{course | items2dict}}"
+        anisble.builtin.debug:
+          msg: "{{course | items2dict}}"
   
 
 
