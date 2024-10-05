@@ -28,7 +28,7 @@
     vars:
       numbers: [1,2,3,45,4,3,2]
     ansible.builtin.debug:
-      msg: "{{numbers | min}}. {{numbers | max}}"   # Unique values - name: 
+      msg: "min:{{numbers | min}}, max:{{numbers | max}}"   # Unique values - name: 
 
 
 
