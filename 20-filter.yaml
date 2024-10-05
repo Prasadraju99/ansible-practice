@@ -4,5 +4,5 @@
   tasks:
   - name: print default variable
     ansible.builtin.debug:
-      msg: "{{Hello | default('Ramesh')}}"
+      msg: "{{ Hello | default('Ramesh') }}"
      
