@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    subnet_id: "vpc-08130555fc639bd04"
+    subnet_id: "subnet-08ea666dea361801e"
     sg_id: "sg-0f1b4e3ba768d34aa"
     ami_id: "ami-09c813fb71547fc4f"
     instances:                        # installing 3 ec2 instances
