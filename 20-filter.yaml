@@ -6,16 +6,16 @@
     ansible.builtin.debug:
       msg: "Hello {{ name | default('Ramesh') }}"   # Providing default values by ingnoring undefined variables.
       
-- name: convert to uppercase
-  vars:
-    greeting: hello ramesh
-  ansible.builtin.debug:
+  - name: convert to uppercase
+    vars:
+      greeting: hello ramesh
+    ansible.builtin.debug:
      msg: "{{greeting | upper}}"   # Upper case
    
-- name: convert to uppercase
-  vars:
-    greeting: HELLO RAMESH
-  ansible.builtin.debug:
+  - name: convert to uppercase
+    vars:
+      greeting: HELLO RAMESH
+    ansible.builtin.debug:
       msg: "{{greeting | lower}}"    # Lower case
 
 
