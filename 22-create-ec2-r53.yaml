@@ -5,11 +5,11 @@
     subnet_id: "subnet-08ea666dea361801e"
     sg_id: "sg-0f1b4e3ba768d34aa"
     ami_id: "ami-09c813fb71547fc4f"
-    zone: prasadking.xyz
     instances:                        # installing 3 ec2 instances
     - mysql
     - backend
     - frontend
+    zone: prasadking.xyz
   tasks:
   - name: ansible to install boto3 and botocore # installing required packages
     ansible.builtin.pip:
