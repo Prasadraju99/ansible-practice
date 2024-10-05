@@ -5,9 +5,9 @@
   - name: execute the command
     ansible.builtin.shell: ls -ltr > /tmp/output.txt  # login to the server and execute command inside
     # command module, just issues the command
-  - name:
+  - name: check the process
     ansible.builtin.command: ps -ef | grep ssh
     register: output   
-  - name:
+  - name: check the process
     ansible.builtin.shell: ps -ef | grep ssh
-    register: output                              
+    register: output                           
